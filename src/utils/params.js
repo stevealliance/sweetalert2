@@ -80,6 +80,39 @@ export const isValidParameter = (paramName) => {
 }
 
 /**
+ * Is valid parameter for Swal.update() method
+ * @param {String} paramName
+ */
+export const isUpdatableParameter = (paramName) => {
+  return [
+    'title',
+    'titleText',
+    'text',
+    'html',
+    'type',
+    'showConfirmButton',
+    'showCancelButton',
+    'confirmButtonText',
+    'confirmButtonAriaLabel',
+    'confirmButtonColor',
+    'confirmButtonClass',
+    'cancelButtonText',
+    'cancelButtonAriaLabel',
+    'cancelButtonColor',
+    'cancelButtonClass',
+    'buttonsStyling',
+    'reverseButtons',
+    'imageUrl',
+    'imageWidth',
+    'imageHeigth',
+    'imageAlt',
+    'imageClass',
+    'progressSteps',
+    'currentProgressStep'
+  ].indexOf(paramName) !== -1
+}
+
+/**
  * Is deprecated parameter
  * @param {String} paramName
  */

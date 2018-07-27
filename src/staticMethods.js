@@ -9,5 +9,6 @@ export * from './staticMethods/showLoading'
 export * from './staticMethods/timer'
 export {
   isValidParameter,
+  isUpdatableParameter,
   isDeprecatedParameter
 } from './utils/params'
